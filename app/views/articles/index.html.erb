@@ -1,5 +1,15 @@
-<h1>Listing Articles</h1>
-<%= link_to 'New article', new_article_path %>
+<!-- <h1>Listing Articles</h1> -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="menu">
+    <li class="menu-text">Cool Blog</li>
+    <li><%= link_to 'Home', controller: 'welcome' %></li>
+    <li><%= link_to 'Blog', controller: 'articles' %></li>
+    </ul>
+  </div>
+</div>
+
+<%= link_to 'New Post', new_article_path, class: "expanded button" %>
 <table>
   <tr>
     <th>Title</th>
